@@ -2,7 +2,7 @@ cat > .gitignore << 'EOF'
 models/
 *.safetensors
 Invoice_dataset_D1/D1_raw/
-Invoice_dataset_D1/annotations/batch1_1/visualizations/
+
 Into_the_wild_D2/79files/
 invoice_env/
 wild_env/
