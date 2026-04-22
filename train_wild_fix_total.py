@@ -27,8 +27,7 @@ timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
 
 DATASET_PATH = "Into_the_wild_D2/dataset_mapped.json"
 
-OUTPUT_DIR = f"models/layoutlm_wild_{timestamp}"
-RESULTS_DIR = f"results/layoutlm_results_{timestamp}"
+OUTPUT_DIR = "models/layoutlm_wild_final"
 
 NUM_EPOCHS = 3
 BATCH_SIZE = 2
@@ -305,11 +304,11 @@ def main():
     print("\n🤖 Loading LayoutLM model...")
 
     tokenizer = LayoutLMTokenizerFast.from_pretrained(
-        "models/layoutlm20260418_103511"
+        "models/layoutlm_D1_final"
     )
 
     model = LayoutLMForTokenClassification.from_pretrained(
-        "models/layoutlm20260418_103511",
+        "models/layoutlm_D1_final",
         num_labels=NUM_LABELS,
     ).to(device)
 

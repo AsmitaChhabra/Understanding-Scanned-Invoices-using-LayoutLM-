@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 import datetime
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-OUTPUT_DIR    = f"models/layoutlm_wild_{timestamp}"
+OUTPUT_DIR = "models/layoutlm_wild_final"
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 DATASET_PATH  = "Into_the_wild_D2/dataset_mapped.json"
 
@@ -157,9 +157,9 @@ def main():
     print(f"   Train: {len(train_data)}  |  Val: {len(val_data)}")
 
     print("\n🤖 Loading LayoutLM tokenizer and model...")
-    tokenizer = LayoutLMTokenizerFast.from_pretrained("models/layoutlm20260418_103511")
+    tokenizer = LayoutLMTokenizerFast.from_pretrained("models/layoutlm_D1_final")
     model     = LayoutLMForTokenClassification.from_pretrained(
-        "models/layoutlm20260418_103511",
+        "models/layoutlm_D1_final",
         num_labels=NUM_LABELS,
     )
     model.to(device)

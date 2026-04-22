@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 import datetime
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-OUTPUT_DIR = f"models/layoutlm{timestamp}"
+OUTPUT_DIR = "models/layoutlm_D1_final"
 
 # ─── CONFIG ─────────────────────────────────────────────
 DATASET_PATH  = "Invoice_dataset_D1/preprocessed/batch1_1/dataset.json"
