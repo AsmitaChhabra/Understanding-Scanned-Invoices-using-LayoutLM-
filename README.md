@@ -223,3 +223,12 @@ All experiments were run on **macOS with Apple Silicon (MPS backend)**. The code
 - Palm et al. (2017) — CloudScan: A configuration-free invoice analysis system using RNNs
 - Liu et al. (2019) — Graph convolution for multimodal information extraction from visually rich documents
 - Lee et al. (2020) — BioBERT: A pre-trained biomedical language representation model
+
+## Note for Reviewers
+
+The trained model checkpoints are not included in this repo due to GitHub file size limits. To run the project:
+
+1. Run `layoutlm.py` to train the D1 model — it will download `microsoft/layoutlm-base-uncased` automatically
+2. Run `train_wild_fix_total.py` to fine-tune on D2
+3. The raw invoice images (D1_raw) and wild bill images (79files) are also excluded due to size limits — contact the authors for the full dataset
+
