@@ -15,7 +15,7 @@ from tqdm import tqdm
 
 import datetime
 timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-OUTPUT_DIR = "models/layoutlm_wild_final"
+OUTPUT_DIR = "models/layoutlm_wild"
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
 DATASET_PATH  = "Into_the_wild_D2/dataset_mapped.json"
 
