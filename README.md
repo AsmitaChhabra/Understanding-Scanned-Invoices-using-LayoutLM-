@@ -180,22 +180,53 @@ LABEL_MAP = {
 
 ## Installation
 
-### 1. Install Tesseract (macOS)
+### 1. Install Tesseract
+
+**macOS**
 ```bash
 brew install tesseract
 ```
 
+> If you don't have Homebrew:
+> ```bash
+> /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+> ```
+
+**Windows**
+Download and run the installer from:
+https://github.com/UB-Mannheim/tesseract/wiki
+
+During installation, note the path (usually `C:\Program Files\Tesseract-OCR`). Then add it to your system PATH:
+1. Search "Environment Variables" in the Start menu
+2. Under System Variables → find `Path` → click Edit
+3. Add `C:\Program Files\Tesseract-OCR`
+4. Click OK and restart your terminal
+
+---
+
 ### 2. Create and activate virtual environment
+
+**macOS**
 ```bash
 python3 -m venv invoice_env
 source invoice_env/bin/activate
 ```
 
-### 3. Install Python dependencies
+**Windows**
 ```bash
-pip install -r requirements.txt
+python -m venv invoice_env
+invoice_env\Scripts\activate
 ```
 
+---
+
+### 3. Upgrade pip and install dependencies
+
+**macOS & Windows**
+```bash
+pip install --upgrade pip
+pip install -r requirements.txt
+```
 ---
 
 ## Hardware
