@@ -42,7 +42,7 @@ ML2/
 │   └── dataset_mapped.json           # Remapped annotations using shared LABEL_MAP
 │
 ├── models/
-│   ├── layoutlm20260418_103511/      # Best D1-trained model checkpoint
+│   ├── layoutlm_invoices/            # Best D1-trained model checkpoint
 │   ├── layoutlm_wild_v1/             # D2 baseline model checkpoint
 │   └── layoutlm_wild_final/          # D2 fixed model checkpoint (best overall)
 │
@@ -62,7 +62,6 @@ ML2/
 
 ---
 
-
 ## Installation
 
 ### 1. Install Tesseract
@@ -78,6 +77,7 @@ brew install tesseract
 > ```
 
 **Windows**
+
 Download and run the installer from:
 https://github.com/UB-Mannheim/tesseract/wiki
 
@@ -89,9 +89,18 @@ During installation, note the path (usually `C:\Program Files\Tesseract-OCR`). T
 
 ---
 
-### 2. Create and activate virtual environment
+### 2. Clone the Repository
 
-**macOS**
+```bash
+git clone <your-repo-url>
+cd <your-repo-folder>
+```
+
+---
+
+### 3. Create and Activate Virtual Environment
+
+**macOS / Linux**
 ```bash
 python3 -m venv invoice_env
 source invoice_env/bin/activate
@@ -105,51 +114,61 @@ invoice_env\Scripts\activate
 
 ---
 
-### 3. Upgrade pip and install dependencies
+### 4. Upgrade pip and Install Dependencies
 
-**macOS & Windows**
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
 ---
 
 ## Pipeline — Step by Step
 
 ### Step 1 — Annotation (`annotate_D1.py`)
-Reads each invoice image and its corresponding CSV JSON data. Uses Tesseract OCR to locate each field on the image and draws bounding boxes around: `invoice_number`, `invoice_date`, `due_date`, `client_name`, `client_address`, `seller_name`, `seller_address`, `tax`, `total`.
+
+Reads each invoice image and its corresponding CSV/JSON data. Uses Tesseract OCR to locate each field on the image and draws bounding boxes around: `invoice_number`, `invoice_date`, `due_date`, `client_name`, `client_address`, `seller_name`, `seller_address`, `tax`, `total`.
 
 ```bash
-python3 annotate_D1.py
+python3 Invoice_dataset_D1/annotate_D1.py
 ```
 
-**Output:** `Invoice_dataset_D1/annotations/batch1_1/annotations.json` + visualized images
+**Saves:**
+- `Invoice_dataset_D1/annotations/batch1_1/annotations.json` — bounding box annotations for all invoices
+- `Invoice_dataset_D1/annotations/batch1_1/visualizations/` — one annotated image per invoice with colored boxes drawn over each detected field
 
 ---
 
 ### Step 2a — Preprocessing D1 (`preprocss_D1.py`)
-Converts annotated invoices into LayoutLM-compatible records. Each word gets its OCR bounding box normalized to [0, 1000] and a label integer. Resizes all images to a standard 1000×1400.
+
+Converts annotated invoices into LayoutLM-compatible records. Each word gets its OCR bounding box normalized to [0, 1000] and assigned a label integer. Resizes all images to a standard 1000×1400.
 
 ```bash
-python3 preprocss_D1.py
+python3 Invoice_dataset_D1/preprocss_D1.py
 ```
 
-**Output:** `Invoice_dataset_D1/preprocessed/batch1_1/dataset.json`
+**Saves:**
+- `Invoice_dataset_D1/preprocessed/batch1_1/dataset.json` — final LayoutLM-ready JSON with one record per invoice, each containing `words`, `bboxes` (normalized to 0–1000), and `labels` (integer IDs)
 
 ---
 
 ### Step 2b — Label Remapping D2 (`preprocess_D2.py`)
-Maps the wild dataset's original label schema (B-vendor, B-date, B-total etc.) to the shared `LABEL_MAP` used by D1. This allows the D1-trained model to be directly reused for D2 fine-tuning without re-initialising the classification head.
+
+Reads the raw wild dataset annotations and maps the original label schema (`B-vendor`, `B-date`, `B-total`, etc.) to the shared `LABEL_MAP` used by D1. This allows the D1-trained model to be directly reused for D2 fine-tuning without re-initialising the classification head.
 
 ```bash
-python3 preprocess_D2.py
+python3 Into_the_wild_D2/preprocess_D2.py
 ```
 
-**Output:** `Into_the_wild_D2/dataset_mapped.json`
+**Input:** `Into_the_wild_D2/dataset_wild_unmapped.json`
+
+**Saves:**
+- `Into_the_wild_D2/dataset_mapped.json` — remapped dataset with integer label IDs matching the shared `LABEL_MAP`
 
 ---
 
 ### Step 3 — Train on D1 (`layoutlm.py`)
+
 Fine-tunes `microsoft/layoutlm-base-uncased` on the 500 annotated invoices. Only the classifier head and top 2 encoder layers (10 & 11) are trainable. Includes bounding-box jitter, OCR noise augmentation, class-weighted loss, and label smoothing.
 
 ```bash
@@ -162,21 +181,27 @@ python3 layoutlm.py
 - Batch size: `2`, Max sequence length: `128`
 - Dropout: `0.3` (hidden + attention)
 
-**Output:** Model saved to `models/layoutlm{timestamp}/`
+**Saves:**
+- `models/layoutlm_D1_final/` — best D1 model checkpoint (weights + tokenizer)
 
 ---
 
 ### Step 4a — Transfer Learning D2 Baseline (`train_wild.py`)
-Loads the best D1 checkpoint and fine-tunes on the mapped wild dataset with standard cross-entropy loss. Achieved weighted F1 of 0.8270 but tax/total classes had F1 = 0.000 due to class imbalance.
+
+Loads the D1 checkpoint from `models/layoutlm_D1_final/` and fine-tunes on the mapped wild dataset with standard cross-entropy loss. Achieved weighted F1 of 0.8270 but `tax` and `total` classes had F1 = 0.000 due to class imbalance.
 
 ```bash
 python3 train_wild.py
 ```
 
+**Saves:**
+- `models/layoutlm_wild_v1/` — baseline D2 model checkpoint (weights + tokenizer)
+
 ---
 
 ### Step 4b — Transfer Learning D2 Fixed (`train_wild_fix_total.py`)
-Identical to Step 4a but adds class-weighted cross-entropy loss with log-inverse-frequency weights. Resolves the tax/total collapse and achieves macro-F1 of **0.8970**. Also includes a rule-based fallback for total extraction.
+
+Identical to Step 4a but adds class-weighted cross-entropy loss with log-inverse-frequency weights. Resolves the `tax`/`total` collapse and achieves macro-F1 of **0.8970**. Also includes a rule-based fallback for total extraction.
 
 ```bash
 python3 train_wild_fix_total.py
@@ -188,11 +213,13 @@ python3 train_wild_fix_total.py
 - Batch size: `2`, Max sequence length: `256`
 - Loss: Class-weighted CrossEntropy + label smoothing `0.1`
 
-**Output:** Model saved to `models/layoutlm_wild_{timestamp}/`, results to `results/`
+**Saves:**
+- `models/layoutlm_wild_final/` — best D2 model checkpoint (weights + tokenizer)
 
 ---
 
 ### Step 5 — Similarity Detection (`similarity.py`)
+
 Extracts feature vectors (CLS token embeddings via mean pooling) from all invoices using the trained LayoutLM model. Computes both Cosine and Jaccard similarity between all invoice pairs. Returns top-5 most similar invoices per query.
 
 ```bash
@@ -201,13 +228,28 @@ python3 similarity.py
 
 **Config (edit at top of file):**
 ```python
-TRAINED_MODEL_PATH  = "models/layoutlm20260418_103511"   # or layoutlm_wild_final for D2
-DATASET_JSON        = "Into_the_wild_D2/dataset_mapped.json"   # or D1 dataset
-OUTPUT_DIR          = "similarity_results_1"
+TRAINED_MODEL_PATH   = "models/layoutlm_wild_final"             # or layoutlm_invoices for D1
+DATASET_JSON         = "Into_the_wild_D2/dataset_mapped.json"   # or D1 dataset
+OUTPUT_DIR           = "similarity_results_1"
 SIMILARITY_THRESHOLD = 0.80    # cosine
 ```
 
-**Output:** `similarity_results_1/similarity_results.json`
+**Saves:**
+- `similarity_results_1/similarity_results.json` — pairwise Cosine + Jaccard scores and top-5 most similar invoices per query
+
+---
+
+## One-Command Pipeline (Optional)
+
+```bash
+python3 annotate_D1.py && \
+python3 preprocss_D1.py && \
+python3 preprocess_D2.py && \
+python3 layoutlm.py && \
+python3 train_wild.py && \
+python3 train_wild_fix_total.py && \
+python3 similarity.py
+```
 
 ---
 
@@ -229,7 +271,6 @@ LABEL_MAP = {
 ```
 
 ---
-
 
 ## Hardware
 
@@ -257,11 +298,12 @@ All experiments were run on **macOS with Apple Silicon (MPS backend)**. The code
 - Liu et al. (2019) — Graph convolution for multimodal information extraction from visually rich documents
 - Lee et al. (2020) — BioBERT: A pre-trained biomedical language representation model
 
+---
+
 ## Note for Reviewers
 
 The trained model checkpoints are not included in this repo due to GitHub file size limits. To run the project:
 
 1. Run `layoutlm.py` to train the D1 model — it will download `microsoft/layoutlm-base-uncased` automatically
 2. Run `train_wild_fix_total.py` to fine-tune on D2
-3. The raw invoice images (D1_raw) and wild bill images (79files) are also excluded due to size limits — contact the authors for the full dataset
-
+3. The raw invoice images (`D1_raw`) and wild bill images (`79files`) are also excluded due to size limits — contact the authors for the full dataset
