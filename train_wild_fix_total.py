@@ -53,6 +53,7 @@ ID2LABEL = {v: k for k, v in LABEL_MAP.items()}
 NUM_LABELS = len(LABEL_MAP)
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+RESULTS_DIR = "results"
 os.makedirs(RESULTS_DIR, exist_ok=True)
 
 torch.manual_seed(SEED)
