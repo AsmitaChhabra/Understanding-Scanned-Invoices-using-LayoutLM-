@@ -225,31 +225,31 @@ Extracts feature vectors (CLS token embeddings via mean pooling) from all invoic
 ```bash
 python3 similarity.py
 ```
+**Config (ref at top of `similarity.py`):**
 
-**Config (edit at top of file):**
 ```python
-TRAINED_MODEL_PATH   = "models/layoutlm_wild_final"             # or layoutlm_invoices for D1
-DATASET_JSON         = "Into_the_wild_D2/dataset_mapped.json"   # or D1 dataset
-OUTPUT_DIR           = "similarity_results_1"
-SIMILARITY_THRESHOLD = 0.80    # cosine
+RUNS = [
+    {
+        "name": "D1_invoices",
+        "model_path": "models/layoutlm_invoices",
+        "dataset_json": "Invoice_dataset_D1/preprocessed/batch1_1/dataset.json",
+        "output_file": "similarity_results_1/similarity_results_D1.json",
+    },
+    {
+        "name": "D2_wild",
+        "model_path": "models/layoutlm_wild_final",
+        "dataset_json": "Into_the_wild_D2/dataset_mapped.json",
+        "output_file": "similarity_results_1/similarity_results_D2.json",
+    },
+]
 ```
 
 **Saves:**
+- `similarity_results_1/similarity_results_D1.json` — D1 similarity results
+- `similarity_results_1/similarity_results_D2.json` — D2 similarity results
+
+**Saves:**
 - `similarity_results_1/similarity_results.json` — pairwise Cosine + Jaccard scores and top-5 most similar invoices per query
-
----
-
-## One-Command Pipeline (Optional)
-
-```bash
-python3 annotate_D1.py && \
-python3 preprocss_D1.py && \
-python3 preprocess_D2.py && \
-python3 layoutlm.py && \
-python3 train_wild.py && \
-python3 train_wild_fix_total.py && \
-python3 similarity.py
-```
 
 ---
 
