@@ -152,7 +152,7 @@ def evaluate(model, loader):
 
             for p_seq, l_seq, c_seq in zip(preds, labels, confidence):
                 for p, l, c in zip(p_seq.tolist(), l_seq.tolist(), c_seq.tolist()):
-                    if l != -100 and c > 0.6:  # 🔥 confidence filtering
+                    if l != -100 and c > 0.6:  # confidence filtering
                         all_preds.append(p)
                         all_labels.append(l)
 
@@ -186,7 +186,7 @@ def main():
         num_labels=NUM_LABELS
     )
 
-    # 🔥 Unfreeze 2 layers instead of 1
+    # Unfreeze 2 layers instead of 1
     for name, param in model.named_parameters():
         if "classifier" in name or "encoder.layer.10" in name or "encoder.layer.11" in name:
             param.requires_grad = True
@@ -218,7 +218,7 @@ def main():
 
     class_weights = torch.tensor(class_weights_list, dtype=torch.float).to(device)
 
-    # 🔥 Label smoothing added
+    # Label smoothing added
     loss_fct = torch.nn.CrossEntropyLoss(
         weight=class_weights,
         ignore_index=-100,
@@ -272,11 +272,11 @@ def main():
             patience_counter = 0
             model.save_pretrained(OUTPUT_DIR)
             tokenizer.save_pretrained(OUTPUT_DIR)
-            print("✅ Model saved")
+            print("Model saved")
         else:
             patience_counter += 1
             if patience_counter >= PATIENCE:
-                print("🛑 Early stopping")
+                print("Early stopping")
                 break
 
     print("\nTraining complete.")
