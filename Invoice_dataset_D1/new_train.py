@@ -23,7 +23,7 @@ from sklearn.metrics import classification_report, confusion_matrix
 # CONFIG — change these when scaling to 3000 samples
 # =========================================================
 
-DATASET_PATH    = "Invoice_dataset_D1/preprocessed/batch1_1/dataset.json"
+DATASET_PATH    = "Invoice_dataset_D1/annotations/batch1_1/annotations_incvoice.json"
 PRETRAINED_PATH = "microsoft/layoutlm-base-uncased"   # swap for your saved model path on re-runs
 OUTPUT_DIR      = "models/layoutlm_D1_final"
 RESULTS_DIR     = "results/D1"
