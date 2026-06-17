@@ -1,7 +1,5 @@
 # Understanding Scanned Invoices Using LayoutLM with Cross-Domain Transfer
 
-**DTSC302 Course Project — FLAME University**
-Asmita Chhabra & Nandika Aggarwal
 
 ---
 
