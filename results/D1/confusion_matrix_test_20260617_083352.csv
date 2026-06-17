@@ -1,0 +1,10 @@
+Actual / Predicted,other,invoice_number,invoice_date,client_name,client_address,seller_name,seller_address,tax,total
+other,45996,0,5,211,5,0,291,779,455
+invoice_number,0,997,0,0,0,0,0,0,0
+invoice_date,0,0,1064,0,0,0,0,0,0
+client_name,482,0,0,1625,330,45,0,0,0
+client_address,185,0,0,823,628,54,0,0,0
+seller_name,0,0,0,0,243,1475,300,0,0
+seller_address,90,0,0,0,0,683,535,26,0
+tax,287,0,0,0,0,0,7,610,8
+total,213,0,0,0,0,0,3,5,180

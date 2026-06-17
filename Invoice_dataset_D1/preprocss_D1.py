@@ -7,28 +7,24 @@ from PIL import Image
 from tqdm import tqdm
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-ANNOTATIONS_PATH = "Invoice_dataset_D1/annotations/batch1_1/annotations.json"
-IMG_DIR          = "Invoice_dataset_D1/D1_raw/batch_1/batch1_1"
-OUTPUT_DIR       = "Invoice_dataset_D1/preprocessed/batch1_1"
+ANNOTATIONS_PATH = "/Users/asmita/Desktop/Understanding-Scanned-Invoices-using-LayoutLM/Invoice_dataset_D1/annotations/batch1_3/annotations_3.json"
+IMG_DIR          = "Invoice_dataset_D1/D1_raw/batch1_3"
+OUTPUT_DIR       = "Invoice_dataset_D1/preprocessed/batch1_3"
 TARGET_SIZE      = (1000, 1400)  # standard size for all images (width, height)
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # ─── LABEL MAP ────────────────────────────────────────────────────────────────
-# LayoutLM uses BIO tagging:
-# B = Beginning of a field
-# I = Inside a field
-# O = Outside (not a labeled field)
+
 LABEL_MAP = {
     "invoice_number": 1,
     "invoice_date":   2,
-    "due_date":       3,
-    "client_name":    4,
-    "client_address": 5,
-    "seller_name":    6,
-    "seller_address": 7,
-    "tax":            8,
-    "total":          9,
+    "client_name":    3,
+    "client_address": 4,
+    "seller_name":    5,
+    "seller_address": 6,
+    "tax":            7,
+    "total":          8,
     "other":          0,
 }
 

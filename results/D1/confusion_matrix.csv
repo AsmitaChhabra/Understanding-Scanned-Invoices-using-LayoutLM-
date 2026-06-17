@@ -1,0 +1,10 @@
+,other,invoice_number,invoice_date,client_name,client_address,seller_name,seller_address,tax,total
+other,12982,0,0,2,7,0,9,95,158
+invoice_number,0,350,0,0,0,0,0,0,0
+invoice_date,3,0,379,0,0,0,0,0,0
+client_name,38,0,0,246,5,2,0,0,0
+client_address,110,0,0,0,904,0,68,0,0
+seller_name,0,0,0,0,0,270,1,0,0
+seller_address,14,0,0,0,19,0,899,0,0
+tax,36,0,0,0,0,0,0,128,3
+total,162,0,0,0,1,0,0,1,115

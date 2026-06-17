@@ -1,0 +1,20 @@
+LAYOUTLM — FINAL TEST SET EVALUATION
+============================================================
+Timestamp   : 20260617_083352
+Model       : models/layoutlm_D1_final
+Device      : Apple Silicon GPU (MPS)
+
+Macro F1    : 0.6692
+Weighted F1 : 0.9069
+
+Label                 Precision   Recall       F1    Support
+------------------------------------------------------------
+other                    0.9734   0.9634   0.9684      47742
+invoice_number           1.0000   1.0000   1.0000        997
+invoice_date             0.9953   1.0000   0.9977       1064
+client_name              0.6111   0.6547   0.6322       2482
+client_address           0.5207   0.3716   0.4337       1690
+seller_name              0.6535   0.7309   0.6901       2018
+seller_address           0.4710   0.4010   0.4332       1334
+tax                      0.4296   0.6689   0.5232        912
+total                    0.2799   0.4489   0.3448        401

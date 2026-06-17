@@ -1,0 +1,4519 @@
+{
+  "threshold_used": {
+    "cosine": 0.8,
+    "jaccard": 0.8
+  },
+  "likely_duplicates": [
+    {
+      "invoice_a": "bill_045",
+      "invoice_b": "bill_052",
+      "cosine": 0.9938,
+      "jaccard": 0.9242
+    }
+  ],
+  "results": [
+    {
+      "query_invoice": "bill_001",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_032",
+          "score": 0.9628,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9533,
+          "similar": true
+        },
+        {
+          "invoice": "bill_062",
+          "score": 0.9478,
+          "similar": true
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.9475,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9475,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_018",
+          "score": 0.1385,
+          "similar": false
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.1259,
+          "similar": false
+        },
+        {
+          "invoice": "bill_070",
+          "score": 0.1232,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.109,
+          "similar": false
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.1083,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_002",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_057",
+          "score": 0.9593,
+          "similar": true
+        },
+        {
+          "invoice": "bill_053",
+          "score": 0.8983,
+          "similar": true
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.8537,
+          "similar": true
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.7513,
+          "similar": false
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.7157,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_024",
+          "score": 0.1232,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.12,
+          "similar": false
+        },
+        {
+          "invoice": "bill_057",
+          "score": 0.1182,
+          "similar": false
+        },
+        {
+          "invoice": "bill_055",
+          "score": 0.1026,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1014,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_003",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_004",
+          "score": 0.895,
+          "similar": true
+        },
+        {
+          "invoice": "bill_063",
+          "score": 0.8906,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.8517,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.7915,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.7882,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_004",
+          "score": 0.2857,
+          "similar": false
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.2638,
+          "similar": false
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.11,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.1062,
+          "similar": false
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.104,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_004",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_070",
+          "score": 0.9051,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.8959,
+          "similar": true
+        },
+        {
+          "invoice": "bill_003",
+          "score": 0.895,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.8628,
+          "similar": true
+        },
+        {
+          "invoice": "bill_063",
+          "score": 0.846,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_003",
+          "score": 0.2857,
+          "similar": false
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.2182,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.1126,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1095,
+          "similar": false
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.1095,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_005",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_071",
+          "score": 0.8554,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.8426,
+          "similar": true
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.8272,
+          "similar": true
+        },
+        {
+          "invoice": "bill_041",
+          "score": 0.8217,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.8205,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_034",
+          "score": 0.6429,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1176,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.101,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.101,
+          "similar": false
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.0941,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_006",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_036",
+          "score": 0.9027,
+          "similar": true
+        },
+        {
+          "invoice": "bill_063",
+          "score": 0.8326,
+          "similar": true
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.8062,
+          "similar": true
+        },
+        {
+          "invoice": "bill_003",
+          "score": 0.7882,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.7826,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.2059,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.2055,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1859,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.1842,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.1631,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_007",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_062",
+          "score": 0.9774,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9596,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9543,
+          "similar": true
+        },
+        {
+          "invoice": "bill_032",
+          "score": 0.9483,
+          "similar": true
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.9449,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_078",
+          "score": 0.144,
+          "similar": false
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.1402,
+          "similar": false
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.139,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.137,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.1362,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_008",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_014",
+          "score": 0.9384,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.9163,
+          "similar": true
+        },
+        {
+          "invoice": "bill_009",
+          "score": 0.9073,
+          "similar": true
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.9034,
+          "similar": true
+        },
+        {
+          "invoice": "bill_025",
+          "score": 0.8958,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_028",
+          "score": 0.125,
+          "similar": false
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.1176,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.11,
+          "similar": false
+        },
+        {
+          "invoice": "bill_019",
+          "score": 0.1085,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1071,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_009",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_008",
+          "score": 0.9073,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.9069,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.9039,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.9033,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.8836,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_021",
+          "score": 0.1728,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.163,
+          "similar": false
+        },
+        {
+          "invoice": "bill_071",
+          "score": 0.1443,
+          "similar": false
+        },
+        {
+          "invoice": "bill_038",
+          "score": 0.1429,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1415,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_010",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_067",
+          "score": 0.9312,
+          "similar": true
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.9246,
+          "similar": true
+        },
+        {
+          "invoice": "bill_020",
+          "score": 0.9171,
+          "similar": true
+        },
+        {
+          "invoice": "bill_069",
+          "score": 0.9119,
+          "similar": true
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.9072,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_024",
+          "score": 0.1339,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.1333,
+          "similar": false
+        },
+        {
+          "invoice": "bill_062",
+          "score": 0.1297,
+          "similar": false
+        },
+        {
+          "invoice": "bill_011",
+          "score": 0.1289,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1232,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_011",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_018",
+          "score": 0.9512,
+          "similar": true
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.9237,
+          "similar": true
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.9198,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.9194,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.894,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_024",
+          "score": 0.1667,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.135,
+          "similar": false
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.1304,
+          "similar": false
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.1304,
+          "similar": false
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.1289,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_012",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_014",
+          "score": 0.9598,
+          "similar": true
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.9411,
+          "similar": true
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.931,
+          "similar": true
+        },
+        {
+          "invoice": "bill_025",
+          "score": 0.9256,
+          "similar": true
+        },
+        {
+          "invoice": "bill_019",
+          "score": 0.9248,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_021",
+          "score": 0.2235,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.2041,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.1881,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.1827,
+          "similar": false
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.1759,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_013",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_018",
+          "score": 0.8692,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.8691,
+          "similar": true
+        },
+        {
+          "invoice": "bill_041",
+          "score": 0.8657,
+          "similar": true
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.8615,
+          "similar": true
+        },
+        {
+          "invoice": "bill_011",
+          "score": 0.86,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.2727,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.2547,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.2308,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.2308,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.2277,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_014",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_012",
+          "score": 0.9598,
+          "similar": true
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.9394,
+          "similar": true
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.9394,
+          "similar": true
+        },
+        {
+          "invoice": "bill_008",
+          "score": 0.9384,
+          "similar": true
+        },
+        {
+          "invoice": "bill_026",
+          "score": 0.9275,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.2857,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.2647,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.2547,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.2091,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.1939,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_015",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_028",
+          "score": 0.9001,
+          "similar": true
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.8981,
+          "similar": true
+        },
+        {
+          "invoice": "bill_033",
+          "score": 0.8396,
+          "similar": true
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.7996,
+          "similar": false
+        },
+        {
+          "invoice": "bill_034",
+          "score": 0.7472,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_028",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_033",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1282,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.1242,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.1222,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_016",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_061",
+          "score": 0.9504,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9448,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9418,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.9411,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.9394,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_003",
+          "score": 0.2638,
+          "similar": false
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.2182,
+          "similar": false
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.1436,
+          "similar": false
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.1434,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1333,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_017",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_035",
+          "score": 0.8397,
+          "similar": true
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.8053,
+          "similar": true
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.8024,
+          "similar": true
+        },
+        {
+          "invoice": "bill_076",
+          "score": 0.7897,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.7813,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_028",
+          "score": 0.1357,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1345,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.1136,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.1119,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1103,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_018",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_011",
+          "score": 0.9512,
+          "similar": true
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.9285,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.9245,
+          "similar": true
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.9157,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.915,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_014",
+          "score": 0.1844,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1806,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.1791,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.1739,
+          "similar": false
+        },
+        {
+          "invoice": "bill_019",
+          "score": 0.1617,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_019",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_012",
+          "score": 0.9248,
+          "similar": true
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.924,
+          "similar": true
+        },
+        {
+          "invoice": "bill_026",
+          "score": 0.921,
+          "similar": true
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.9098,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.9091,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_013",
+          "score": 0.1679,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.1679,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1667,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.162,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.1617,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_020",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_069",
+          "score": 0.9254,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.9171,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.9065,
+          "similar": true
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.9045,
+          "similar": true
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.8961,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_032",
+          "score": 0.1245,
+          "similar": false
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.1139,
+          "similar": false
+        },
+        {
+          "invoice": "bill_011",
+          "score": 0.1132,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.1079,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1063,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_021",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_063",
+          "score": 0.7867,
+          "similar": false
+        },
+        {
+          "invoice": "bill_003",
+          "score": 0.734,
+          "similar": false
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.7284,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.6992,
+          "similar": false
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.6744,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_012",
+          "score": 0.2235,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_071",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.1935,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1919,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_022",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_024",
+          "score": 0.895,
+          "similar": true
+        },
+        {
+          "invoice": "bill_002",
+          "score": 0.8537,
+          "similar": true
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.8425,
+          "similar": true
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.8293,
+          "similar": true
+        },
+        {
+          "invoice": "bill_057",
+          "score": 0.8187,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_067",
+          "score": 0.144,
+          "similar": false
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.1307,
+          "similar": false
+        },
+        {
+          "invoice": "bill_011",
+          "score": 0.1304,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.122,
+          "similar": false
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.1164,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_023",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_055",
+          "score": 0.9196,
+          "similar": true
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.8961,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.8928,
+          "similar": true
+        },
+        {
+          "invoice": "bill_026",
+          "score": 0.8894,
+          "similar": true
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.8828,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_025",
+          "score": 0.1264,
+          "similar": false
+        },
+        {
+          "invoice": "bill_057",
+          "score": 0.1088,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.0961,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.0944,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.0939,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_024",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_078",
+          "score": 0.9342,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.9246,
+          "similar": true
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.895,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.8814,
+          "similar": true
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.8804,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_011",
+          "score": 0.1667,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1588,
+          "similar": false
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.1579,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.146,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.1449,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_025",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_016",
+          "score": 0.9265,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.9256,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.925,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.9225,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.9143,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_013",
+          "score": 0.1314,
+          "similar": false
+        },
+        {
+          "invoice": "bill_023",
+          "score": 0.1264,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.1259,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.125,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1241,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_026",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_027",
+          "score": 0.9456,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.943,
+          "similar": true
+        },
+        {
+          "invoice": "bill_032",
+          "score": 0.9368,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9324,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9322,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_013",
+          "score": 0.1776,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1543,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.15,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.1493,
+          "similar": false
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.1479,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_027",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_026",
+          "score": 0.9456,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.9256,
+          "similar": true
+        },
+        {
+          "invoice": "bill_019",
+          "score": 0.924,
+          "similar": true
+        },
+        {
+          "invoice": "bill_069",
+          "score": 0.9103,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.9056,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_024",
+          "score": 0.1384,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.1373,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.129,
+          "similar": false
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.1286,
+          "similar": false
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.1276,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_028",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_015",
+          "score": 0.9001,
+          "similar": true
+        },
+        {
+          "invoice": "bill_033",
+          "score": 0.8868,
+          "similar": true
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.8346,
+          "similar": true
+        },
+        {
+          "invoice": "bill_034",
+          "score": 0.7859,
+          "similar": false
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.7559,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_033",
+          "score": 0.2449,
+          "similar": false
+        },
+        {
+          "invoice": "bill_015",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1833,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1717,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.1552,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_029",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_048",
+          "score": 0.9381,
+          "similar": true
+        },
+        {
+          "invoice": "bill_070",
+          "score": 0.9117,
+          "similar": true
+        },
+        {
+          "invoice": "bill_053",
+          "score": 0.9073,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.8871,
+          "similar": true
+        },
+        {
+          "invoice": "bill_057",
+          "score": 0.8097,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_078",
+          "score": 0.1592,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.137,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.1351,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.1324,
+          "similar": false
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.1257,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_030",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_046",
+          "score": 0.9128,
+          "similar": true
+        },
+        {
+          "invoice": "bill_047",
+          "score": 0.8893,
+          "similar": true
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.8198,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.8081,
+          "similar": true
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.7886,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_012",
+          "score": 0.2041,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.191,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.1739,
+          "similar": false
+        },
+        {
+          "invoice": "bill_071",
+          "score": 0.1731,
+          "similar": false
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.1727,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_031",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_004",
+          "score": 0.8628,
+          "similar": true
+        },
+        {
+          "invoice": "bill_003",
+          "score": 0.8517,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.8499,
+          "similar": true
+        },
+        {
+          "invoice": "bill_070",
+          "score": 0.8314,
+          "similar": true
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.8161,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_049",
+          "score": 0.1119,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1102,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.1085,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.1071,
+          "similar": false
+        },
+        {
+          "invoice": "bill_025",
+          "score": 0.1069,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_032",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_062",
+          "score": 0.967,
+          "similar": true
+        },
+        {
+          "invoice": "bill_001",
+          "score": 0.9628,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9563,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9561,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.953,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_074",
+          "score": 0.1464,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.136,
+          "similar": false
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.1317,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1309,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.1303,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_033",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_028",
+          "score": 0.8868,
+          "similar": true
+        },
+        {
+          "invoice": "bill_015",
+          "score": 0.8396,
+          "similar": true
+        },
+        {
+          "invoice": "bill_034",
+          "score": 0.811,
+          "similar": true
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.7921,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.7196,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_028",
+          "score": 0.2449,
+          "similar": false
+        },
+        {
+          "invoice": "bill_015",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.134,
+          "similar": false
+        },
+        {
+          "invoice": "bill_070",
+          "score": 0.1273,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1264,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_034",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_033",
+          "score": 0.811,
+          "similar": true
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.7859,
+          "similar": false
+        },
+        {
+          "invoice": "bill_005",
+          "score": 0.7475,
+          "similar": false
+        },
+        {
+          "invoice": "bill_015",
+          "score": 0.7472,
+          "similar": false
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.738,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_005",
+          "score": 0.6429,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1048,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.099,
+          "similar": false
+        },
+        {
+          "invoice": "bill_003",
+          "score": 0.0887,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.0882,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_035",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_078",
+          "score": 0.9109,
+          "similar": true
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.898,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.891,
+          "similar": true
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.8894,
+          "similar": true
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.8843,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_018",
+          "score": 0.1437,
+          "similar": false
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.1374,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.1244,
+          "similar": false
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.1207,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.1103,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_036",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_006",
+          "score": 0.9027,
+          "similar": true
+        },
+        {
+          "invoice": "bill_063",
+          "score": 0.822,
+          "similar": true
+        },
+        {
+          "invoice": "bill_003",
+          "score": 0.7851,
+          "similar": false
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.7818,
+          "similar": false
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.7691,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_025",
+          "score": 0.0966,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.0924,
+          "similar": false
+        },
+        {
+          "invoice": "bill_026",
+          "score": 0.0913,
+          "similar": false
+        },
+        {
+          "invoice": "bill_019",
+          "score": 0.0892,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.089,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_037",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_045",
+          "score": 0.8837,
+          "similar": true
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.8809,
+          "similar": true
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.8808,
+          "similar": true
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.839,
+          "similar": true
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.8267,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_045",
+          "score": 0.1964,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1919,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.1913,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.1892,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.1833,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_038",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_054",
+          "score": 0.8912,
+          "similar": true
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.8911,
+          "similar": true
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.8859,
+          "similar": true
+        },
+        {
+          "invoice": "bill_050",
+          "score": 0.8818,
+          "similar": true
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.8783,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_013",
+          "score": 0.1842,
+          "similar": false
+        },
+        {
+          "invoice": "bill_071",
+          "score": 0.1667,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1626,
+          "similar": false
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.157,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1475,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_039",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_014",
+          "score": 0.9394,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.931,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.9242,
+          "similar": true
+        },
+        {
+          "invoice": "bill_008",
+          "score": 0.9034,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9021,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_058",
+          "score": 0.3012,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.2857,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.2727,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.2632,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.2059,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_040",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_015",
+          "score": 0.8981,
+          "similar": true
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.8346,
+          "similar": true
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.8142,
+          "similar": true
+        },
+        {
+          "invoice": "bill_033",
+          "score": 0.7921,
+          "similar": false
+        },
+        {
+          "invoice": "bill_041",
+          "score": 0.7808,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.1709,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.155,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.1517,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.1504,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.15,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_041",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_054",
+          "score": 0.8997,
+          "similar": true
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.8862,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.8718,
+          "similar": true
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.8657,
+          "similar": true
+        },
+        {
+          "invoice": "bill_050",
+          "score": 0.8646,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_043",
+          "score": 0.1485,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1442,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.1354,
+          "similar": false
+        },
+        {
+          "invoice": "bill_071",
+          "score": 0.1354,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1341,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_042",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_045",
+          "score": 0.8861,
+          "similar": true
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.8726,
+          "similar": true
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.8684,
+          "similar": true
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.8622,
+          "similar": true
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.8586,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_043",
+          "score": 0.1587,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.129,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1288,
+          "similar": false
+        },
+        {
+          "invoice": "bill_041",
+          "score": 0.1273,
+          "similar": false
+        },
+        {
+          "invoice": "bill_015",
+          "score": 0.1242,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_043",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_052",
+          "score": 0.9222,
+          "similar": true
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.9195,
+          "similar": true
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.8843,
+          "similar": true
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.8809,
+          "similar": true
+        },
+        {
+          "invoice": "bill_020",
+          "score": 0.8795,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_013",
+          "score": 0.2091,
+          "similar": false
+        },
+        {
+          "invoice": "bill_071",
+          "score": 0.1909,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1795,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.1759,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.1727,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_044",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_030",
+          "score": 0.8198,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.8161,
+          "similar": true
+        },
+        {
+          "invoice": "bill_046",
+          "score": 0.815,
+          "similar": true
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.8114,
+          "similar": true
+        },
+        {
+          "invoice": "bill_070",
+          "score": 0.7671,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.2632,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.2414,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.2308,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1939,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.1739,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_045",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_052",
+          "score": 0.9938,
+          "similar": true
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.9195,
+          "similar": true
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.8894,
+          "similar": true
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.8861,
+          "similar": true
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.8837,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_052",
+          "score": 0.9242,
+          "similar": true
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1964,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.1881,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.1619,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_046",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_047",
+          "score": 0.924,
+          "similar": true
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.9128,
+          "similar": true
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.815,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.7968,
+          "similar": false
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.7411,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_018",
+          "score": 0.1103,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1066,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1,
+          "similar": false
+        },
+        {
+          "invoice": "bill_001",
+          "score": 0.0962,
+          "similar": false
+        },
+        {
+          "invoice": "bill_049",
+          "score": 0.0948,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_047",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_046",
+          "score": 0.924,
+          "similar": true
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.8893,
+          "similar": true
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.7663,
+          "similar": false
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.7558,
+          "similar": false
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.6952,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_037",
+          "score": 0.0952,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.0861,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.0847,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.0833,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.0826,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_048",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_029",
+          "score": 0.9381,
+          "similar": true
+        },
+        {
+          "invoice": "bill_053",
+          "score": 0.8551,
+          "similar": true
+        },
+        {
+          "invoice": "bill_070",
+          "score": 0.7911,
+          "similar": false
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.7733,
+          "similar": false
+        },
+        {
+          "invoice": "bill_057",
+          "score": 0.7426,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.0667,
+          "similar": false
+        },
+        {
+          "invoice": "bill_038",
+          "score": 0.0619,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.0588,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.0575,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.0562,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_049",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_043",
+          "score": 0.8519,
+          "similar": true
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.8512,
+          "similar": true
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.8491,
+          "similar": true
+        },
+        {
+          "invoice": "bill_072",
+          "score": 0.8416,
+          "similar": true
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.839,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_013",
+          "score": 0.2308,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.2091,
+          "similar": false
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.1915,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1828,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.1698,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_050",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_054",
+          "score": 0.9214,
+          "similar": true
+        },
+        {
+          "invoice": "bill_079",
+          "score": 0.9023,
+          "similar": true
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.8976,
+          "similar": true
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.8901,
+          "similar": true
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.8829,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_037",
+          "score": 0.1583,
+          "similar": false
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.1552,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.1333,
+          "similar": false
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.1288,
+          "similar": false
+        },
+        {
+          "invoice": "bill_033",
+          "score": 0.119,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_051",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_070",
+          "score": 0.9319,
+          "similar": true
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.8959,
+          "similar": true
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.8871,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.8499,
+          "similar": true
+        },
+        {
+          "invoice": "bill_063",
+          "score": 0.8405,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_050",
+          "score": 0.1552,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.122,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.1154,
+          "similar": false
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.1135,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.1132,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_052",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_045",
+          "score": 0.9938,
+          "similar": true
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.9222,
+          "similar": true
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.898,
+          "similar": true
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.8808,
+          "similar": true
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.8726,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_045",
+          "score": 0.9242,
+          "similar": true
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1935,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1913,
+          "similar": false
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.1827,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.1574,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_053",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_057",
+          "score": 0.9603,
+          "similar": true
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.9073,
+          "similar": true
+        },
+        {
+          "invoice": "bill_002",
+          "score": 0.8983,
+          "similar": true
+        },
+        {
+          "invoice": "bill_048",
+          "score": 0.8551,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.8304,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_054",
+          "score": 0.2487,
+          "similar": false
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.1179,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1158,
+          "similar": false
+        },
+        {
+          "invoice": "bill_062",
+          "score": 0.1083,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.0961,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_054",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_016",
+          "score": 0.9371,
+          "similar": true
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.926,
+          "similar": true
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.9245,
+          "similar": true
+        },
+        {
+          "invoice": "bill_025",
+          "score": 0.9225,
+          "similar": true
+        },
+        {
+          "invoice": "bill_050",
+          "score": 0.9214,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_053",
+          "score": 0.2487,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1795,
+          "similar": false
+        },
+        {
+          "invoice": "bill_069",
+          "score": 0.162,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1544,
+          "similar": false
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.1493,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_055",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_023",
+          "score": 0.9196,
+          "similar": true
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.8958,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.8643,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.8583,
+          "similar": true
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.8527,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_057",
+          "score": 0.1718,
+          "similar": false
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.142,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.1136,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1068,
+          "similar": false
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.1033,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_056",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_065",
+          "score": 0.9751,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9698,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9692,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9679,
+          "similar": true
+        },
+        {
+          "invoice": "bill_007",
+          "score": 0.9449,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_057",
+          "score": 0.1504,
+          "similar": false
+        },
+        {
+          "invoice": "bill_055",
+          "score": 0.142,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.095,
+          "similar": false
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.0932,
+          "similar": false
+        },
+        {
+          "invoice": "bill_002",
+          "score": 0.0922,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_057",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_053",
+          "score": 0.9603,
+          "similar": true
+        },
+        {
+          "invoice": "bill_002",
+          "score": 0.9593,
+          "similar": true
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.8187,
+          "similar": true
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.8097,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.7713,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_055",
+          "score": 0.1718,
+          "similar": false
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.1504,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1449,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.1314,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1292,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_058",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_012",
+          "score": 0.9243,
+          "similar": true
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.9242,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.9235,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.9207,
+          "similar": true
+        },
+        {
+          "invoice": "bill_025",
+          "score": 0.9143,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_039",
+          "score": 0.3012,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.2647,
+          "similar": false
+        },
+        {
+          "invoice": "bill_044",
+          "score": 0.2414,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.2277,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.2055,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_059",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_068",
+          "score": 0.979,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9717,
+          "similar": true
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.9694,
+          "similar": true
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.9679,
+          "similar": true
+        },
+        {
+          "invoice": "bill_062",
+          "score": 0.9647,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_062",
+          "score": 0.193,
+          "similar": false
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.1919,
+          "similar": false
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.1471,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1446,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.1359,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_060",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_024",
+          "score": 0.8804,
+          "similar": true
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.8724,
+          "similar": true
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.8482,
+          "similar": true
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.8425,
+          "similar": true
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.8267,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_062",
+          "score": 0.2076,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.1919,
+          "similar": false
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.1383,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1207,
+          "similar": false
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.1195,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_061",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_016",
+          "score": 0.9504,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.926,
+          "similar": true
+        },
+        {
+          "invoice": "bill_011",
+          "score": 0.9198,
+          "similar": true
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.9157,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.9154,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_062",
+          "score": 0.1846,
+          "similar": false
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.1383,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.135,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.1301,
+          "similar": false
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.118,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_062",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_007",
+          "score": 0.9774,
+          "similar": true
+        },
+        {
+          "invoice": "bill_032",
+          "score": 0.967,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9647,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9623,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9555,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_060",
+          "score": 0.2076,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.193,
+          "similar": false
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.1846,
+          "similar": false
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.1622,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1477,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_063",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_003",
+          "score": 0.8906,
+          "similar": true
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.846,
+          "similar": true
+        },
+        {
+          "invoice": "bill_051",
+          "score": 0.8405,
+          "similar": true
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.8326,
+          "similar": true
+        },
+        {
+          "invoice": "bill_036",
+          "score": 0.822,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_037",
+          "score": 0.1357,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.1341,
+          "similar": false
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.1282,
+          "similar": false
+        },
+        {
+          "invoice": "bill_078",
+          "score": 0.1244,
+          "similar": false
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.1242,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_064",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_075",
+          "score": 0.8999,
+          "similar": true
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.8752,
+          "similar": true
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.854,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.8479,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.8451,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_062",
+          "score": 0.1622,
+          "similar": false
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.1495,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.1471,
+          "similar": false
+        },
+        {
+          "invoice": "bill_016",
+          "score": 0.1434,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1361,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_065",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_066",
+          "score": 0.9872,
+          "similar": true
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.9751,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9751,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9694,
+          "similar": true
+        },
+        {
+          "invoice": "bill_001",
+          "score": 0.9475,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_067",
+          "score": 0.3617,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.2985,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.138,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1321,
+          "similar": false
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.1307,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_066",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_065",
+          "score": 0.9872,
+          "similar": true
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.9747,
+          "similar": true
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.9717,
+          "similar": true
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.9698,
+          "similar": true
+        },
+        {
+          "invoice": "bill_032",
+          "score": 0.9561,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_065",
+          "score": 0.2985,
+          "similar": false
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.2926,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1461,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.146,
+          "similar": false
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.1373,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_067",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_074",
+          "score": 0.9566,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.9312,
+          "similar": true
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.9256,
+          "similar": true
+        },
+        {
+          "invoice": "bill_069",
+          "score": 0.9123,
+          "similar": true
+        },
+        {
+          "invoice": "bill_026",
+          "score": 0.9098,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_065",
+          "score": 0.3617,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.2926,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1579,
+          "similar": false
+        },
+        {
+          "invoice": "bill_022",
+          "score": 0.144,
+          "similar": false
+        },
+        {
+          "invoice": "bill_068",
+          "score": 0.1364,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_068",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_059",
+          "score": 0.979,
+          "similar": true
+        },
+        {
+          "invoice": "bill_065",
+          "score": 0.9751,
+          "similar": true
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.9747,
+          "similar": true
+        },
+        {
+          "invoice": "bill_056",
+          "score": 0.9692,
+          "similar": true
+        },
+        {
+          "invoice": "bill_062",
+          "score": 0.9623,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_069",
+          "score": 0.2044,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.1795,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1588,
+          "similar": false
+        },
+        {
+          "invoice": "bill_062",
+          "score": 0.1477,
+          "similar": false
+        },
+        {
+          "invoice": "bill_066",
+          "score": 0.1461,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_069",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_020",
+          "score": 0.9254,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.9123,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.9119,
+          "similar": true
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.9103,
+          "similar": true
+        },
+        {
+          "invoice": "bill_026",
+          "score": 0.897,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_068",
+          "score": 0.2044,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.162,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1317,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.1214,
+          "similar": false
+        },
+        {
+          "invoice": "bill_007",
+          "score": 0.1137,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_070",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_051",
+          "score": 0.9319,
+          "similar": true
+        },
+        {
+          "invoice": "bill_029",
+          "score": 0.9117,
+          "similar": true
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.9051,
+          "similar": true
+        },
+        {
+          "invoice": "bill_031",
+          "score": 0.8314,
+          "similar": true
+        },
+        {
+          "invoice": "bill_053",
+          "score": 0.7915,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_071",
+          "score": 0.1652,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.152,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.1452,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.1356,
+          "similar": false
+        },
+        {
+          "invoice": "bill_021",
+          "score": 0.1346,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_071",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_058",
+          "score": 0.8939,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.8684,
+          "similar": true
+        },
+        {
+          "invoice": "bill_005",
+          "score": 0.8554,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.8522,
+          "similar": true
+        },
+        {
+          "invoice": "bill_009",
+          "score": 0.8505,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_021",
+          "score": 0.2,
+          "similar": false
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.1909,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.1776,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1754,
+          "similar": false
+        },
+        {
+          "invoice": "bill_030",
+          "score": 0.1731,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_072",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_049",
+          "score": 0.8416,
+          "similar": true
+        },
+        {
+          "invoice": "bill_043",
+          "score": 0.8258,
+          "similar": true
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.814,
+          "similar": true
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.8,
+          "similar": false
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.7989,
+          "similar": false
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_021",
+          "score": 0.129,
+          "similar": false
+        },
+        {
+          "invoice": "bill_037",
+          "score": 0.1197,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.1077,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.1026,
+          "similar": false
+        },
+        {
+          "invoice": "bill_045",
+          "score": 0.1,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_073",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_075",
+          "score": 0.9357,
+          "similar": true
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.9043,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.9023,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.861,
+          "similar": true
+        },
+        {
+          "invoice": "bill_076",
+          "score": 0.8604,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_037",
+          "score": 0.1136,
+          "similar": false
+        },
+        {
+          "invoice": "bill_032",
+          "score": 0.1115,
+          "similar": false
+        },
+        {
+          "invoice": "bill_075",
+          "score": 0.1106,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.1044,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.104,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_074",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_067",
+          "score": 0.9566,
+          "similar": true
+        },
+        {
+          "invoice": "bill_073",
+          "score": 0.9043,
+          "similar": true
+        },
+        {
+          "invoice": "bill_023",
+          "score": 0.8961,
+          "similar": true
+        },
+        {
+          "invoice": "bill_055",
+          "score": 0.8958,
+          "similar": true
+        },
+        {
+          "invoice": "bill_027",
+          "score": 0.8897,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_064",
+          "score": 0.1495,
+          "similar": false
+        },
+        {
+          "invoice": "bill_032",
+          "score": 0.1464,
+          "similar": false
+        },
+        {
+          "invoice": "bill_007",
+          "score": 0.1257,
+          "similar": false
+        },
+        {
+          "invoice": "bill_059",
+          "score": 0.1233,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.1202,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_075",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_073",
+          "score": 0.9357,
+          "similar": true
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.8999,
+          "similar": true
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.8754,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.8697,
+          "similar": true
+        },
+        {
+          "invoice": "bill_019",
+          "score": 0.8374,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_073",
+          "score": 0.1106,
+          "similar": false
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.0988,
+          "similar": false
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.0927,
+          "similar": false
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.0884,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.0829,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_076",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_024",
+          "score": 0.8636,
+          "similar": true
+        },
+        {
+          "invoice": "bill_073",
+          "score": 0.8604,
+          "similar": true
+        },
+        {
+          "invoice": "bill_067",
+          "score": 0.8569,
+          "similar": true
+        },
+        {
+          "invoice": "bill_074",
+          "score": 0.8529,
+          "similar": true
+        },
+        {
+          "invoice": "bill_075",
+          "score": 0.8279,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_021",
+          "score": 0.0955,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.095,
+          "similar": false
+        },
+        {
+          "invoice": "bill_042",
+          "score": 0.0914,
+          "similar": false
+        },
+        {
+          "invoice": "bill_064",
+          "score": 0.0887,
+          "similar": false
+        },
+        {
+          "invoice": "bill_024",
+          "score": 0.0859,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_077",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_016",
+          "score": 0.8715,
+          "similar": true
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.8591,
+          "similar": true
+        },
+        {
+          "invoice": "bill_061",
+          "score": 0.858,
+          "similar": true
+        },
+        {
+          "invoice": "bill_012",
+          "score": 0.8502,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.8502,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_046",
+          "score": 0.0667,
+          "similar": false
+        },
+        {
+          "invoice": "bill_047",
+          "score": 0.0565,
+          "similar": false
+        },
+        {
+          "invoice": "bill_004",
+          "score": 0.0496,
+          "similar": false
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.049,
+          "similar": false
+        },
+        {
+          "invoice": "bill_052",
+          "score": 0.0484,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_078",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_024",
+          "score": 0.9342,
+          "similar": true
+        },
+        {
+          "invoice": "bill_035",
+          "score": 0.9109,
+          "similar": true
+        },
+        {
+          "invoice": "bill_010",
+          "score": 0.9072,
+          "similar": true
+        },
+        {
+          "invoice": "bill_020",
+          "score": 0.8961,
+          "similar": true
+        },
+        {
+          "invoice": "bill_060",
+          "score": 0.8724,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_029",
+          "score": 0.1592,
+          "similar": false
+        },
+        {
+          "invoice": "bill_006",
+          "score": 0.1591,
+          "similar": false
+        },
+        {
+          "invoice": "bill_014",
+          "score": 0.1556,
+          "similar": false
+        },
+        {
+          "invoice": "bill_013",
+          "score": 0.1469,
+          "similar": false
+        },
+        {
+          "invoice": "bill_040",
+          "score": 0.1457,
+          "similar": false
+        }
+      ]
+    },
+    {
+      "query_invoice": "bill_079",
+      "top_similar_cosine": [
+        {
+          "invoice": "bill_050",
+          "score": 0.9023,
+          "similar": true
+        },
+        {
+          "invoice": "bill_054",
+          "score": 0.8973,
+          "similar": true
+        },
+        {
+          "invoice": "bill_058",
+          "score": 0.8886,
+          "similar": true
+        },
+        {
+          "invoice": "bill_041",
+          "score": 0.8862,
+          "similar": true
+        },
+        {
+          "invoice": "bill_038",
+          "score": 0.8859,
+          "similar": true
+        }
+      ],
+      "top_similar_jaccard": [
+        {
+          "invoice": "bill_019",
+          "score": 0.1404,
+          "similar": false
+        },
+        {
+          "invoice": "bill_039",
+          "score": 0.1395,
+          "similar": false
+        },
+        {
+          "invoice": "bill_007",
+          "score": 0.139,
+          "similar": false
+        },
+        {
+          "invoice": "bill_028",
+          "score": 0.1342,
+          "similar": false
+        },
+        {
+          "invoice": "bill_018",
+          "score": 0.1322,
+          "similar": false
+        }
+      ]
+    }
+  ]
+}

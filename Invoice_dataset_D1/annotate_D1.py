@@ -6,9 +6,9 @@ import pytesseract
 from tqdm import tqdm
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-IMG_DIR    = "Invoice_dataset_D1/D1_raw/batch_1/batch1_1"
-CSV_PATH   = "Invoice_dataset_D1/D1_raw/batch_1/batch1_1.csv"
-OUTPUT_DIR = "Invoice_dataset_D1/annotations/batch1_1"
+IMG_DIR    = "Invoice_dataset_D1/D1_raw/batch1_3"
+CSV_PATH   = "Invoice_dataset_D1/D1_raw/batch1_3.csv"
+OUTPUT_DIR = "Invoice_dataset_D1/annotations/batch1_3"
 TEST_MODE  = False
 TEST_LIMIT = 5
 
@@ -39,7 +39,7 @@ def parse_json_cell(cell):
         return None
 
 # ─── FIND SINGLE LINE TEXT BBOX ───────────────────────────────────────────────
-def find_text_bbox(ocr_data, search_text):
+def find_text_bbox(ocr_data, search_text, prefer_bottom=False, img_height=None):
     if not search_text or str(search_text).strip() == "":
         return None
 
@@ -56,6 +56,8 @@ def find_text_bbox(ocr_data, search_text):
     widths  = ocr_data['width']
     heights = ocr_data['height']
     n       = len(words)
+
+    all_matches = []  # collect ALL matches, not just first
 
     for i in range(n):
         word = str(words[i]).strip()
@@ -83,10 +85,16 @@ def find_text_bbox(ocr_data, search_text):
             y_min = min(b[1] for b in match_boxes)
             x_max = max(b[0] + b[2] for b in match_boxes)
             y_max = max(b[1] + b[3] for b in match_boxes)
-            return [x_min, y_min, x_max, y_max]
+            all_matches.append([x_min, y_min, x_max, y_max])
 
-    return None
+    if not all_matches:
+        return None
 
+    if prefer_bottom and img_height:
+        # Return the match closest to the bottom — that's the summary total
+        return max(all_matches, key=lambda b: b[3])
+
+    return all_matches[0]
 # ─── FIND MULTI-LINE TEXT BBOX ────────────────────────────────────────────────
 def find_multiline_bbox(ocr_data, full_text):
     if not full_text or str(full_text).strip() == "":
@@ -153,29 +161,32 @@ def annotate_image(img_path, json_data):
                 pass
 
     fields = {
-        "invoice_number": (invoice.get("invoice_number", ""),  "single"),
-        "invoice_date":   (invoice.get("invoice_date", ""),    "single"),
-        "due_date":       (invoice.get("due_date", ""),        "single"),
-        "client_name":    (invoice.get("client_name", ""),     "single"),
-        "client_address": (invoice.get("client_address", ""),  "multi"),
-        "seller_name":    (invoice.get("seller_name", ""),     "single"),
-        "seller_address": (invoice.get("seller_address", ""),  "multi"),
-        "tax":            (tax_val,                            "single"),
-        "total":          (total_val,                          "single"),
+        "invoice_number": (invoice.get("invoice_number", ""), "single", False),
+        "invoice_date":   (invoice.get("invoice_date", ""),   "single", False),
+        "client_name":    (invoice.get("client_name", ""),    "single", False),
+        "client_address": (invoice.get("client_address", ""), "multi",  False),
+        "seller_name":    (invoice.get("seller_name", ""),    "single", False),
+        "seller_address": (invoice.get("seller_address", ""), "multi",  False),
+        "tax":            (tax_val,                           "single", True),  # prefer bottom
+        "total":          (total_val,                         "single", True),  # prefer bottom
     }
 
     print(f"    Fields: { {k:v[0] for k,v in fields.items() if v[0]} }")
 
     annotations = []
 
-    for field_name, (field_value, field_type) in fields.items():
+    for field_name, (field_value, field_type, prefer_bottom) in fields.items():
         if not field_value:
             continue
 
         if field_type == "multi":
             bbox = find_multiline_bbox(ocr_data, field_value)
         else:
-            bbox = find_text_bbox(ocr_data, field_value)
+            bbox = find_text_bbox(
+                ocr_data, field_value,
+                prefer_bottom=prefer_bottom,
+                img_height=image.shape[0]
+            )
 
         if bbox:
             annotations.append({

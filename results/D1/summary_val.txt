@@ -1,0 +1,24 @@
+==================================================
+LAYOUTLM D1 TRAINING SUMMARY
+==================================================
+
+Timestamp   : 20260504_163132
+Device      : Apple Silicon GPU (MPS)
+Dataset     : Invoice_dataset_D1/dataset_preprocessed_D1.json
+Max Seq Len : 256
+Epochs run  : 6
+
+Best Macro F1    : 0.8776
+Best Weighted F1 : 0.9734
+
+Per-Class Metrics (best epoch)
+----------------------------------------
+other                P: 0.987  R: 0.984  F1: 0.985  Support: 14250
+invoice_number       P: 1.000  R: 1.000  F1: 1.000  Support: 350
+invoice_date         P: 1.000  R: 0.997  F1: 0.999  Support: 390
+client_name          P: 0.974  R: 0.985  F1: 0.979  Support: 262
+client_address       P: 0.970  R: 0.884  F1: 0.925  Support: 1022
+seller_name          P: 0.982  R: 0.996  F1: 0.989  Support: 278
+seller_address       P: 0.938  R: 0.973  F1: 0.955  Support: 935
+tax                  P: 0.564  R: 0.844  F1: 0.676  Support: 109
+total                P: 0.355  R: 0.430  F1: 0.389  Support: 165

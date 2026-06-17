@@ -1,0 +1,23 @@
+=======================================================
+LAYOUTLM D2 TRANSFER LEARNING SUMMARY
+=======================================================
+
+Timestamp        : 20260617_084256
+Device           : Apple Silicon GPU (MPS)
+Source model     : models/layoutlm_D1_final
+Dataset          : Into_the_wild_D2/dataset_mapped.json
+Max Seq Len      : 512
+Epochs run       : 5
+
+Best Macro F1    : 0.4629
+Best Weighted F1 : 0.8004
+
+Per-Class Metrics (best epoch)
+----------------------------------------
+other                P: 0.917  R: 0.877  F1: 0.897  Support: 2409
+invoice_date         P: 0.520  R: 0.654  F1: 0.580  Support: 78
+seller_name          P: 0.383  R: 0.532  F1: 0.446  Support: 77
+seller_address       P: 0.421  R: 0.536  F1: 0.471  Support: 252
+tax                  P: 0.333  R: 0.244  F1: 0.282  Support: 119
+total                P: 0.250  R: 0.065  F1: 0.103  Support: 62
+micro avg            P: 0.809  R: 0.792  F1: 0.800  Support: 2997
